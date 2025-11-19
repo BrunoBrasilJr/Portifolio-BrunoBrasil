@@ -1,0 +1,18 @@
+/* =============================
+   ANIMAÇÃO DOS CARDS - SUAVE E SEM DELAY
+   ============================= */
+.project-card {
+  transition: transform 120ms ease-out, box-shadow 120ms ease-out;
+  will-change: transform;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+/* =============================
+   CORREÇÃO DE BORDAS NO DARK MODE
+   ============================= */
+.dark .border-fix {
+  border-color: #2f2f2f !important;
+}
