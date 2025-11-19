@@ -12,15 +12,24 @@ export default function Header() {
           onClick={() => scroll.scrollToTop({ duration: 600, smooth: true })}
           className="flex items-center cursor-pointer"
         >
+          {/* Caminho absoluto para pasta public */}
           <img src="/santos-logo.png" alt="Logo" className="h-10 w-auto" />
         </a>
 
         {/* NAVBAR */}
         <nav className="flex gap-6">
-          <Link to="about" smooth={true} duration={600} offset={-80} className="text-gray-100 hover:text-blue-400 transition cursor-pointer">Trajetória</Link>
-          <Link to="skills" smooth={true} duration={600} offset={-80} className="text-gray-100 hover:text-blue-400 transition cursor-pointer">Habilidades</Link>
-          <Link to="projects" smooth={true} duration={600} offset={-80} className="text-gray-100 hover:text-blue-400 transition cursor-pointer">Projetos</Link>
-          <Link to="contact" smooth={true} duration={600} offset={-80} className="text-gray-100 hover:text-blue-400 transition cursor-pointer">Redes</Link>
+          <Link to="about" smooth={true} duration={600} offset={-80} className="text-gray-100 hover:text-blue-400 transition cursor-pointer">
+            Trajetória
+          </Link>
+          <Link to="skills" smooth={true} duration={600} offset={-80} className="text-gray-100 hover:text-blue-400 transition cursor-pointer">
+            Habilidades
+          </Link>
+          <Link to="projects" smooth={true} duration={600} offset={-80} className="text-gray-100 hover:text-blue-400 transition cursor-pointer">
+            Projetos
+          </Link>
+          <Link to="contact" smooth={true} duration={600} offset={-80} className="text-gray-100 hover:text-blue-400 transition cursor-pointer">
+            Redes
+          </Link>
         </nav>
 
       </div>
