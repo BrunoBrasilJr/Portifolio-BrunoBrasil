@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
-import logo from '../assets/santos-logo.png'; // 📌 ajuste o caminho conforme a pasta da sua imagem
+import logo from '../assets/santos-logo.png'; // import correto da pasta assets
 
 export default function Header() {
   return (
@@ -22,7 +22,7 @@ export default function Header() {
           onClick={() => scroll.scrollToTop({ duration: 600, smooth: true })}
           className="flex items-center cursor-pointer"
         >
-          <img src={logo} alt="Logo" className="h-10 w-auto" />
+          <img src="/santos-logo.png" alt="Logo" className="h-10 w-auto" />
         </a>
 
         {/* NAVBAR */}
