@@ -1,5 +1,6 @@
-import React from 'react'
-import { Link, animateScroll as scroll } from 'react-scroll'
+import React from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import logo from '../assets/santos-logo.png'; // 📌 ajuste o caminho conforme a pasta da sua imagem
 
 export default function Header() {
   return (
@@ -21,7 +22,7 @@ export default function Header() {
           onClick={() => scroll.scrollToTop({ duration: 600, smooth: true })}
           className="flex items-center cursor-pointer"
         >
-          <img src="/Santos-logo.png" alt="Logo" className="h-10 w-auto" />
+          <img src={logo} alt="Logo" className="h-10 w-auto" />
         </a>
 
         {/* NAVBAR */}
@@ -30,7 +31,7 @@ export default function Header() {
             to="about"
             smooth={true}
             duration={600}
-            offset={-80} // para compensar a altura do header
+            offset={-80}
             className="text-gray-100 hover:text-blue-400 transition cursor-pointer"
           >
             Trajetória
@@ -66,5 +67,5 @@ export default function Header() {
 
       </div>
     </header>
-  )
+  );
 }
